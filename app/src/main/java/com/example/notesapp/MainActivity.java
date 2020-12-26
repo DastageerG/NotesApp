@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
         NotesItemsAdapter adapter = new NotesItemsAdapter(context, SampleDataProvider.getSampleData());
         recyclerView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
     }
 
 } // MainActivity closed
